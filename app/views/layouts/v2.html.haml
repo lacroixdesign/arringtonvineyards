@@ -76,12 +76,13 @@
           to improve your experience.
 
 
-    %nav.l-nav1
-      .m-menu1
+    %nav.l-nav2
+      .m-menu2
         .logo
           = link_to root_url do
             = image_tag "av.svg"
-        %ul
+        .toggle= link_to "Menu", "#menu", data: {behavior: "toggle"}
+        %ul#menu
           %li= link_to "Visit Us", "#"
           %li= link_to "News & Events", "#"
           %li= link_to "Private Events", "#"
@@ -93,7 +94,20 @@
     = yield
     
     
-    %footer#l-footer
+    %footer#l-footer2
+      .wrap
+        .logo-wrap
+          .logo= image_tag "arrington-vineyards.png"
+        %ul
+          %li.icon= link_to icon("e000"), "#facebook"
+          %li.icon= link_to icon("e005"), "#twitter"
+          %li= link_to "Our Wines", "#"
+          %li &bull;
+          %li= link_to "Sign Up", "#"
+          %li &bull;
+          %li= link_to "Contact Us", "#"
+          %li &bull;
+          %li= link_to "FAQ", "#"
     
     
     

@@ -1,7 +1,8 @@
 // Basic Elements
 body {
-  background: white;
-  font-family: $typeface-sans;
+  background: #fff asset-url("bg1.jpg", image) no-repeat center center fixed;
+  background-size: cover;
+  font-family: $typeface-serif;
   text-shadow: 1px 1px 1px transparent;
 }
 
@@ -26,3 +27,8 @@ h5 {}
 h6 {}
 
 p {}
+
+img {
+  display: block;
+  width: 100%;
+}

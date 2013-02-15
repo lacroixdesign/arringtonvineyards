@@ -1,1 +1,64 @@
-#l-footer {}
+// v2
+#l-footer2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #aa9962;
+  color: #f8f8f8;
+  font-size: 80%;
+
+  .wrap {
+    position: relative;
+    @include outer-container;
+    padding: 0.5em $page-gutter;
+  }
+
+  .logo-wrap {
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+
+    .logo {
+      width: 15em;
+      margin: 0 auto 0.75em;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: right;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0;
+    font-style: italic;
+  }
+
+  .icon {
+    margin-right: 0.75em;
+    font-size: 1.25em;
+    &:first-child { margin-right: 0.25em; }
+  }
+
+  @include media-ie($breakpoint-desktop) {
+    font-size: 100%;
+
+    .logo-wrap {
+      @include clearfix;
+      right: $page-gutter;
+
+      .logo {
+        float: right;
+        margin: 0 0 0.75em;
+      }
+    }
+  }
+}

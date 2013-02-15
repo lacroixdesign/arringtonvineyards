@@ -1,0 +1,83 @@
+// v1
+.m-menu1 {
+  color: #111;
+  text-shadow: 0 1px 1px #fff;
+  text-transform: uppercase;
+
+  .logo {
+    img {
+      // max-width: 2em;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0;
+
+    a {
+      display: block;
+      padding: 1em;
+    }
+  }
+}
+
+// v2
+.m-menu2 {
+  @include clearfix;
+  padding: 0.5em 1em;
+  color: #222;
+  text-align: center;
+
+  .logo {
+    float: left;
+    max-width: 2em;
+  }
+
+  .toggle {
+    float: right;
+    margin: 0.35em 0;
+    text-transform: uppercase;
+  }
+
+  ul {
+    clear: both;
+    display: none;
+    list-style: none;
+    margin: 1.5em auto;
+    font-size: 80%;
+  }
+
+  li {
+    margin: 0.5em 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+
+  @include media-ie($breakpoint-desktop) {
+    padding: 0 1em;
+
+    .logo {
+      float: none;
+      max-width: 12em;
+      margin: 1.5em auto;
+    }
+
+    .toggle {
+      display: none;
+    }
+
+    ul {
+      display: block;
+      font-size: 100%;
+    }
+
+    li {
+      margin: 0;
+    }
+  }
+}
