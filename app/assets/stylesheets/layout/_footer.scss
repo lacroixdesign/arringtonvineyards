@@ -9,7 +9,6 @@
   font-size: 80%;
 
   .wrap {
-    position: relative;
     @include outer-container;
     padding: 0.5em $page-gutter;
   }
@@ -17,6 +16,7 @@
   .logo-wrap {
     position: absolute;
     bottom: 100%;
+    left: 0;
     width: 100%;
 
     .logo {
@@ -49,6 +49,10 @@
 
   @include media-ie($breakpoint-desktop) {
     font-size: 100%;
+
+    .wrap {
+      position: relative;
+    }
 
     .logo-wrap {
       @include clearfix;
