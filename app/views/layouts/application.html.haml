@@ -88,15 +88,26 @@
           %li= link_to "Donations", "#"
           %li= link_to "Wine Club", "#"
           %li= link_to "Shop", "#"
+          
       
       
     = yield
     
     
     %footer#l-footer
-    
-    
-    
+      .wrap
+        .logo-wrap
+          .logo= image_tag "arrington-vineyards.png"
+        %ul
+          %li= link_to "Our Wines", "#"
+          %li &bull;
+          %li= link_to "Sign Up", "#"
+          %li &bull;
+          %li= link_to "Contact Us", "#"
+          %li &bull;
+          %li= link_to "FAQ", "#"    
+          %li.icon= link_to icon("e000"), "#facebook"
+          %li.icon= link_to icon("e005"), "#twitter"    
 
     
     
