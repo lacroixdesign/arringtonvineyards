@@ -1,12 +1,12 @@
 // v1
 .m-menu1 {
-  color: #111;
+  color: #19190f;
   text-shadow: 0 1px 1px #fff;
   text-transform: uppercase;
 
   .logo {
     img {
-      // max-width: 2em;
+     max-height: 3em;
     }
   }
 
@@ -18,10 +18,19 @@
   li {
     display: inline-block;
     margin: 0;
+    font-weight: 700;
 
     a {
       display: block;
       padding: 1em;
+    }
+    
+    a:hover {
+      color: $gold;
+    }
+    
+    a:active {
+      color: darken($gold, 15%)
     }
   }
 }
