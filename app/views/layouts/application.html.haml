@@ -64,7 +64,7 @@
   
   
   
-  %body
+  %body{ class: ("alternate-footer" if @alt_footer) }
     /[if lt IE 9]
       #outdated-browser.outdated-browser
         %p

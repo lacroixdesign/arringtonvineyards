@@ -1,9 +1,6 @@
 #l-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: $gold;
+  padding: 1em 0 3em;
+  margin-top: 2em;
   @include radial-gradient($gold, darken($gold, 5%));
   color: $white;
   text-shadow: 0 -1px 1px darken($gold, 10%);
@@ -19,17 +16,12 @@
   }
 
   .logo-wrap {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    width: 100%;
-
+    float: left;
     img { width: 100%; }
   }
 
   .logo {
     width: 15em;
-    margin: 0 auto 0.75em;
   }
 
   ul {
@@ -52,13 +44,37 @@
 
   @include media-ie($breakpoint-ipad) {
     font-size: 100%;
-    }
-        
+  }
+
   @include media-ie($breakpoint-desktop) {
-    
-    .wrap {
-      position: relative;
-    }
+    ul { text-align: right; }
+  }
+}
+
+// Alternate Footer Layout
+.alternate-footer #l-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin-top: 0;
+
+  .logo-wrap {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    float: none;
+    width: 100%;
+  }
+
+  .logo {
+    width: 15em;
+    margin: 0 auto 0.75em;
+  }
+
+  @include media-ie($breakpoint-desktop) {
+    .wrap { position: relative; }
 
     .logo-wrap {
       @include clearfix;
@@ -70,7 +86,5 @@
       float: right;
       margin: 0 0 0.75em;
     }
-
-    ul { text-align: right; }
   }
 }
