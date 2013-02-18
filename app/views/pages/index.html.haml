@@ -1,6 +1,25 @@
 .l-constrained.l-inner
-  %ul
-    %h3
-      %li= link_to "Example #1: Full Background", "/background"
-      %li= link_to "Example #2: Continuously Horizontal", "/horizontal"
-      %li= link_to "Example #3: Grid Gallery (like Jordan)", "/grid"
+  .l-main
+    %h1 Home Page Prototypes
+    %hr
+
+    %p
+      Since these are prototypes, most of the interactive features have not been implemented and loading performance has not been optimized. Also, legacy browser quirks have yet to be evaluated, so please view these in the most recent versions of either <strong>#{link_to "Chrome", "https://www.google.com/intl/en/chrome/browser/", target: "_blank"}</strong>, <strong>#{link_to "Firefox", "http://www.mozilla.org/en-US/firefox/new/", target: "_blank"}</strong>, or <strong>#{link_to "Safari", "http://www.apple.com/safari/", target: "_blank"}</strong>. We recommend Google's Chrome.
+    
+    %h3= link_to "Example #1: Full Screen w/ Fade", "/background"
+    %p
+      Full screen photos which fade to the next photo at a set interval. The interval is currently 5 seconds, however we can adjust this to your liking. Previous & next photo can be navigated to by using the left & right arrow keys on the keyboard, or via a swipe action on touch screen devices. This layout can accommodate any image proportion.
+      %em
+        %strong= link_to "View", "/background"
+
+    %h3= link_to "Example #2: Horizontal Slide", "/horizontal"
+    %p
+      Horizontal galleries that stretch beyond the width of the display. Visitors will be able to navigate left or right through each slide by clicking buttons or swiping. This layout can accommodate any image proportion.
+      %em
+        %strong= link_to "View", "/horizontal"
+
+    %h3= link_to "Example #3: Grid w/ Fade", "/grid"
+    %p
+      A layout similar to the Jordan site (fixed grid), but with a layout that adjusts to accomadate different browser sizes and devices (Jordan's site replaces the fading-gallery with a single static image). New photos would periodically replace the on-screen photos (like Jordan).
+      %em
+        %strong= link_to "View", "/grid"

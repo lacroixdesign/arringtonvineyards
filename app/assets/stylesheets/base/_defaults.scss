@@ -26,7 +26,17 @@ h5 {}
 
 h6 {}
 
-p {}
+p {
+  font-size: 1.2em;
+
+  a {
+    color: $gold;
+    &:visited,
+    &:hover {
+      color: $gold;
+    }
+  }
+}
 
 img {
   display: block;
