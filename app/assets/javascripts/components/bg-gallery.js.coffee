@@ -30,3 +30,4 @@ jQuery ->
       transition: "fade"
       transition_speed: 1000
       autoplay: true
+      fit_portrait: false
