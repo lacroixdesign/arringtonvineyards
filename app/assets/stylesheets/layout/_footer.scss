@@ -3,9 +3,10 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #aa9962;
-  color: #f8f8f8;
-  font-size: 90%;
+  background: $gold;
+  color: $off-white;
+  text-shadow: 0 -1px 1px darken($gold, 15%);
+  font-size: 87.5%;
 
   .wrap {
     @include outer-container;
@@ -40,13 +41,16 @@
 
   .icon {
     margin-left: 0.75em;
-    font-size: 1.25em;
+    font-size: 1em;
     &:first-child { margin-right: 0.25em; }
   }
 
-  @include media-ie($breakpoint-desktop) {
+  @include media-ie($breakpoint-ipad) {
     font-size: 100%;
-
+    }
+        
+  @include media-ie($breakpoint-desktop) {
+    
     .wrap {
       position: relative;
     }
