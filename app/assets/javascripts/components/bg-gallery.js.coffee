@@ -9,7 +9,7 @@ jQuery ->
       radius:  10 # The radius of the inner circle
       corners: 1  # Corner roundness (0..1)
       rotate:  0  # The rotation offset
-      color:   "#fafaf5" # #rgb or #rrggbb
+      color:   "#aa9962" # #rgb or #rrggbb
       speed:   1  # Rounds per second
       trail:   60 # Afterglow percentage
       shadow:  false # Whether to render a shadow

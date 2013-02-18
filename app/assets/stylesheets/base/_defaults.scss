@@ -1,7 +1,6 @@
 // Basic Elements
 body {
-  background: #fff asset-url("bg1.jpg", image) no-repeat center center fixed;
-  background-size: cover;
+  background: $off-white;
   font-family: $typeface-serif;
   text-shadow: 1px 1px 1px transparent;
 }
