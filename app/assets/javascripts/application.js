@@ -12,7 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.ui.touch-punch.min
+//= require jquery.ui.touch-punch
+//= require jquery.easing
+//= require supersized
+//= require spin.min
 //= require jquery.cookie
 //= require outdated-browser
 //= require_tree ./components

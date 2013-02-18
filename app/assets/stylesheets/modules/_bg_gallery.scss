@@ -1,0 +1,49 @@
+#supersized {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -999;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+
+  img {
+    position: relative;
+    width: auto;
+    height: auto;
+    border: none;
+    outline: none;
+  }
+
+  li {
+    display: block;
+    list-style: none;
+    z-index: -30;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+
+    &.prevslide { z-index: -20; }
+    &.activeslide { z-index: -10; }
+  }
+}
+
+#supersized-loader {
+  display: none;
+}
+
+#slides {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+  background: $black;
+}
