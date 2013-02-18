@@ -35,19 +35,17 @@
   @include media-ie($breakpoint-desktop) {
     .toggle {
       display: none;
-      font-size: 1em;
     }
 
     ul {
       display: block;
       clear: none;
-      font-size: 1em;
       text-align: left;
     }
 
     li {
       display: inline-block;
-      margin: 1em 0 1em 1.5em;
+      margin: .625em 0 .625em 1.5em;
       &:first-child { margin-left: 0; }
     }
   }
