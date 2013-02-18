@@ -7,21 +7,24 @@
       Since these are prototypes, most of the interactive features have not been implemented and loading performance has not been optimized. Also, legacy browser quirks have yet to be evaluated, so please view these in the most recent versions of either <strong>#{link_to "Chrome", "https://www.google.com/intl/en/chrome/browser/", target: "_blank"}</strong>, <strong>#{link_to "Firefox", "http://www.mozilla.org/en-US/firefox/new/", target: "_blank"}</strong>, or <strong>#{link_to "Safari", "http://www.apple.com/safari/", target: "_blank"}</strong>. We recommend Google's Chrome.
     %p
       Since the layouts adapt to different size viewports, be sure to evaluate them across PC's, phones, and tablets.
+
+    -# Grid
+    %h3= link_to "Option #1: Grid w/ Fade", "/grid"
+    %p
+      A layout similar to the Jordan site (fixed grid), but adjusts to properly accomadate different browser sizes and devices (the Jordan site removes the fading-gallery in favor of a static image on phones). New photos would periodically fade-in to replace the on-screen photos (like Jordan). With this layout, the photos in a "row" must be of identical proportions &mdash; otherwise there will be gaps in the grid.
+      %em
+        %strong= link_to "View", "/grid"
     
-    %h3= link_to "Option #1: Full Screen w/ Fade", "/background"
+    -# Background
+    %h3= link_to "Option #2: Full Screen w/ Fade", "/background"
     %p
       Full screen photos which fade to the next photo at a set interval. The interval is currently 5 seconds, however we can adjust this to your liking. Previous & next photo can be navigated to by using the left & right arrow keys on the keyboard, or via a swipe action on touch screen devices. This layout can accommodate any image proportion, however very tall portrait photos are not recommended.
       %em
         %strong= link_to "View", "/background"
 
-    %h3= link_to "Option #2: Horizontal Slide", "/horizontal"
+    -# Horizontal
+    %h3= link_to "Option #3: Horizontal Slide", "/horizontal"
     %p
       Horizontal galleries that stretch beyond the width of the display. Visitors will be able to navigate left or right through each slide by clicking buttons or swiping. This layout can accommodate any image proportion.
       %em
         %strong= link_to "View", "/horizontal"
-
-    %h3= link_to "Option #3: Grid w/ Fade", "/grid"
-    %p
-      A layout similar to the Jordan site (fixed grid), but adjusts to properly accomadate different browser sizes and devices (the Jordan site removes the fading-gallery in favor of a static image on phones). New photos would periodically fade-in to replace the on-screen photos (like Jordan). With this layout, the photos in a "row" must be of identical proportions &mdash; otherwise there will be gaps in the grid.
-      %em
-        %strong= link_to "View", "/grid"
