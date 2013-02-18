@@ -1,12 +1,13 @@
 #l-footer {
   padding: 1em 0 3em;
   background: $gold;
+  @include radial-gradient($gold, darken($gold, 5%));
   color: $white;
   text-shadow: 0 -1px 1px darken($gold, 10%);
   font-size: 87.5%;
 
   a:visited { color: $white;}
-  a:hover { color: darken($white, 15%);}
+  a:hover { color: darken($white, 10%);}
   a:active { color: darken($white, 25%);}
   
   .wrap {
@@ -38,7 +39,7 @@
 
   .icon {
     margin-left: 0.75em;
-    font-size: 1.25em;
+    font-size: 1em;
     &:first-child { margin-right: 0.25em; }
   }
 
