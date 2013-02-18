@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore.min
 //= require jquery.ui.touch-punch
 //= require jquery.easing
 //= require supersized

@@ -1,5 +1,5 @@
 jQuery ->
-  if $("#slides").length
+  if $("#slides").length > 0
     slides = $("#slides").data("slides")
 
     spinnerOpts =

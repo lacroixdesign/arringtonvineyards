@@ -1,0 +1,13 @@
+.m-horizontal-gallery
+  .wrap
+    %table
+      %tr
+        - @images.each do |photo|
+          %td= image_tag photo[:image], data: {width: photo[:width], height: photo[:height]}
+
+.m-horizontal-gallery
+  .wrap
+    %table
+      %tr
+        - @images.reverse.each do |photo|
+          %td= image_tag photo[:image], data: {width: photo[:width], height: photo[:height]}
