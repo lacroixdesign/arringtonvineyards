@@ -28,6 +28,6 @@ jQuery ->
       start_slide: 1
       slideshow: true
       transition: "fade"
-      transition_speed: 1000
+      transition_speed: 750
       autoplay: true
       fit_portrait: false
