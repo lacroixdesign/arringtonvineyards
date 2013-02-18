@@ -31,6 +31,7 @@
 
   a:hover { color: $gold; }
   a:active { color: darken($gold, 15%); }
+  a:visited { color: $black;}
 
   @include media-ie($breakpoint-desktop) {
     .toggle {
