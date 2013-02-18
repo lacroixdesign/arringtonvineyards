@@ -13,9 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require underscore.min
-//= require jquery.ui.touch-punch
-//= require jquery.easing
-//= require supersized
+//= require jquery.easing.min
+//= require supersized.min
 //= require spin.min
 //= require jquery.cookie
 //= require outdated-browser
