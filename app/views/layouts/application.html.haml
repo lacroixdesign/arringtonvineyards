@@ -57,9 +57,9 @@
     = csrf_meta_tags
     
     -# koko wa Typekit -- replace VVVVVVV with the proper kit code
-    / %script{ type: "text/javascript", src: "//use.typekit.net/wyp5qqu.js" }
-    / :javascript
-    /   try{Typekit.load();}catch(e){}
+    %script{ type: "text/javascript", src: "//use.typekit.net/wyp5qqu.js" }
+    :javascript
+      try{Typekit.load();}catch(e){}
   
   
   
@@ -76,12 +76,13 @@
           to improve your experience.
 
 
-    %nav.l-nav1
-      .m-menu1
+    %nav.l-nav
+      .m-menu
         .logo
           = link_to root_url do
             = image_tag "av.svg"
-        %ul
+        .toggle= link_to "Menu", "#menu", data: {behavior: "toggle"}
+        %ul#menu
           %li= link_to "Visit Us", "#"
           %li= link_to "News & Events", "#"
           %li= link_to "Private Events", "#"

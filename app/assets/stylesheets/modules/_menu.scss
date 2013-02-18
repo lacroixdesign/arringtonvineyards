@@ -1,92 +1,54 @@
-// v1
-.m-menu1 {
-  color: #19190f;
+.m-menu {
+  color: $black;
   text-shadow: 0 1px 1px #fff;
   text-transform: uppercase;
 
   .logo {
-    img {
-     max-height: 3em;
-    }
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0;
-    font-weight: 700;
-
-    a {
-      display: block;
-      padding: 1em;
-    }
-    
-    a:hover {
-      color: $gold;
-    }
-    
-    a:active {
-      color: darken($gold, 15%)
-    }
-  }
-}
-
-// v2
-.m-menu2 {
-  @include clearfix;
-  padding: 0.5em 1em;
-  color: #222;
-  text-align: center;
-
-  .logo {
     float: left;
-    max-width: 2em;
+    img { max-width: 3em; }
   }
 
   .toggle {
     float: right;
-    margin: 0.35em 0;
+    margin: 0.6em 0 0;
+    font-size: 1.25em;
     text-transform: uppercase;
   }
 
   ul {
-    clear: both;
     display: none;
     list-style: none;
-    margin: 1.5em auto;
-    font-size: 80%;
+    clear: both;
+    margin: 0;
+    font-size: 1.25em;
+    text-align: center;
   }
 
   li {
-    margin: 0.5em 0;
-    font-size: 1.5em;
-    text-transform: uppercase;
+    display: block;
+    margin: 0.75em 0;
   }
 
+  a:hover { color: $gold; }
+  a:active { color: darken($gold, 15%); }
+
   @include media-ie($breakpoint-desktop) {
-    padding: 0 1em;
-
-    .logo {
-      float: none;
-      max-width: 12em;
-      margin: 1.5em auto;
-    }
-
     .toggle {
       display: none;
+      font-size: 1em;
     }
 
     ul {
       display: block;
-      font-size: 100%;
+      clear: none;
+      font-size: 1em;
+      text-align: left;
     }
 
     li {
-      margin: 0;
+      display: inline-block;
+      margin: 1em 0 1em 1.5em;
+      &:first-child { margin-left: 0; }
     }
   }
 }

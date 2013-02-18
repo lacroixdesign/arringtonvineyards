@@ -1,39 +1,24 @@
-// v1
-.l-nav1 {
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-  background: $off-white;
-  // background: rgba(248,248,248,0.6);
-
-  .m-menu1 {
-    @include outer-container;
-    padding: 0.5em $page-gutter;
-  }
-
-  .logo {
-    @include span-columns(1);
-  }
-
-  ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    @include span-columns(11);
-  }
-}
-
-// v2
-.l-nav2 {
+.l-nav {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
   width: 100%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  background: #fefcf4;
-  background: rgba(254,252,244,0.8);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background: $off-white;
+
+  .m-menu {
+    @include outer-container;
+    padding: 0.5em $page-gutter;
+  }
 
   @include media-ie($breakpoint-desktop) {
-    left: 2.5em;
-    width: 18em;
-    height: 100%;
+    .logo {
+      @include span-columns(1);
+    }
+
+    ul {
+      @include span-columns(11);
+    }
   }
 }
