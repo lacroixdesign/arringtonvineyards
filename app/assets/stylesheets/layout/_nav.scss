@@ -6,6 +6,7 @@
   width: 100%;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   background: $white;
+  @include radial-gradient($white, darken($white, 5%));
 
   .m-menu {
     @include outer-container;
