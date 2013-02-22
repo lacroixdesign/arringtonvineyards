@@ -1,0 +1,18 @@
+.m-account {
+  @include span-columns(12);
+  li {
+    font-size: .75em;
+    list-style-type: none;
+    display: inline;
+    float: right;
+    text-align: right;
+    visibility: hidden
+    }
+  
+  @include media($breakpoint-ipad) {
+    li {  
+      visibility: visible;
+      }
+    }
+  }
+

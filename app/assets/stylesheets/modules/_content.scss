@@ -1,0 +1,14 @@
+.m-content {
+  .m-featured-image {
+    border: .25em solid $white;
+    @include box-shadow(0 1px 2px 0px hsla(0, 0%, 0%, 0.15));
+    margin-bottom: 1em;
+  }
+  
+  @include media-ie($breakpoint-ipad) {
+    .m-featured-image {
+      border: .5em solid $white;
+      @include box-shadow(0 2px 4px 0px hsla(0, 0%, 0%, 0.15));
+      }
+    }
+  }

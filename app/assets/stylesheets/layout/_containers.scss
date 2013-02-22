@@ -5,15 +5,33 @@
   padding: 0 $page-gutter;
 }
 
+.l-account {
+  @include span-columns(12);
+  li {
+    font-size: .75em;
+    list-style-type: none;
+    display: inline;
+    float: right;
+    text-align: right;
+    visibility: hidden
+    }
+  
+  @include media($breakpoint-ipad) {
+    li {  
+      visibility: visible;
+      }
+    }
+}
+
 .l-main {
   @include media($breakpoint-ipad) {
-    @include span-columns(8);
+    @include span-columns(9);
   }
 }
 
 .l-sidebar {
   @include media($breakpoint-ipad) {
-    @include span-columns(4);
+    @include span-columns(3);
   }
 }
 

@@ -11,7 +11,9 @@ a {
 }
 
 p, a, h1, h2, h3, h4, h5, label {
+  color: $gray;
   font-family: inherit;
+  text-shadow: 0 1px 1px lighten($off-white, 15%);
 }
 
 h1 {}
@@ -27,7 +29,7 @@ h5 {}
 h6 {}
 
 p {
-  font-size: 1.2em;
+  font-size: 1.25em;
 
   a {
     color: $gold;

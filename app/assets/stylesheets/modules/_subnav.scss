@@ -1,0 +1,18 @@
+.m-subnav {
+  ul { margin: 0;}
+  li {
+    font-family: $typeface-serif-sc;
+    list-style: none;
+    text-shadow: 0 1px 1px lighten($off-white, 15%);
+  }
+  
+  li a{
+    color: $wine;
+  }
+  
+  @include media-ie($breakpoint-desktop) {
+    li {
+      font-size: 1.5em;
+    }
+  }
+}
