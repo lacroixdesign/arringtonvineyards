@@ -6,6 +6,7 @@
 
 // Mixins
 @import "mixins/ie";
+@import "mixins/images";
 
 // Base
 @import "base/settings";
@@ -19,6 +20,7 @@
 @import "layout/nav";
 @import "layout/footer";
 @import "layout/containers";
+@import "layout/page";
 
 // Modules
 @import "modules/menu";
@@ -28,5 +30,6 @@
 @import "modules/subnav";
 @import "modules/content";
 @import "modules/account";
+@import "modules/images";
 
 // States

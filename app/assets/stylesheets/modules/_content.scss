@@ -1,27 +1,14 @@
 .m-content {
   img {
-    border: .25em solid $white;
-    @include box-shadow(0 1px 2px 0px hsla(0, 0%, 0%, 0.15));
-    }
-  .m-featured-image {
-    margin-bottom: 1em;
-    }  
-  
-  .m-left-image, .m-right-image {
+    @include image-frame;
     display: none;
   }
   
   @include media-ie($breakpoint-ipad) {
     img {
-      border: .5em solid $white;
-      @include box-shadow(0 2px 4px 0px hsla(0, 0%, 0%, 0.15));
-      }
-    .m-left-image, .m-right-image {
-      visibility: visible;
-      @include span-columns(4 of 8);
-      }
-    .m-right-image {
-      float: right;
-      }
+      display: block;
+      width: 45%;
+      margin: 0.5em;
     }
   }
+}

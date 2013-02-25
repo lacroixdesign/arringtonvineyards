@@ -1,0 +1,8 @@
+.l-page {
+  @extend .l-inner;
+  @extend .l-constrained;
+
+  .m-featured-image {
+    margin-bottom: 1em;
+  }
+}
