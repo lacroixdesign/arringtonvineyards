@@ -1,15 +1,11 @@
 .l-page
-  / .m-account
-  /   %ul
-  /     %li
-  /       %a{:href=>"#"}>Account
-  /     %li
-  /       %a{:href=>"#"}>Checkout
+  
   .l-sidebar
     %nav.m-subnav
       %ul
         - ["Our Story", "Meet the Owners", "Wine Making", "Vine Report", "Media"].each do |child_page|
           %li= link_to child_page, "#"
+    = render "shared/account"
 
   .l-main
     .m-featured-image

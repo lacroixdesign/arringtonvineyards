@@ -7,8 +7,8 @@
   @include media-ie($breakpoint-ipad) {
     img {
       display: block;
-      width: 45%;
-      margin: 0.5em;
+      width: 45% !important;
+      margin: 1em;
     }
   }
 }

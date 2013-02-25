@@ -1,19 +1,22 @@
 .m-account {
-  @include span-columns(12);
-  display: none;
+  font-size: 0.875em;
 
   ul {
     list-style: none;
+    margin: 0;
   }
 
   li {
-    float: right;
     display: inline;
-    font-size: 0.75em;
-    text-align: right;
+    margin: 0;
   }
-  
-  @include media($breakpoint-ipad) {
-    display: block;
+
+  a {
+    font-style: italic;
+    &:hover { text-decoration: underline; }
+  }
+
+  @include media-ie($breakpoint-desktop) {
+    font-size: 0.9375em;
   }
 }
