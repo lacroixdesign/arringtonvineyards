@@ -4,10 +4,23 @@
     font-family: $typeface-serif-sc;
     list-style: none;
     text-shadow: 0 1px 1px lighten($off-white, 15%);
+    border-bottom: 1px solid $gold;
   }
   
-  li a{
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  li a, li a:visited{
     color: $wine;
+  }
+  
+  li a:hover {
+    color: darken($wine, 10%)
+  }
+  
+  li a:active {
+    color: darken($wine, 25%)
   }
   
   @include media-ie($breakpoint-desktop) {
