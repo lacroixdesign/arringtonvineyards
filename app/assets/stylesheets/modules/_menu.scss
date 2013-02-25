@@ -1,6 +1,6 @@
 .m-menu {
   color: $black;
-  text-shadow: 0 1px 1px #fff;
+  text-shadow: 0 1px 1px lighten($white, 25%);
   text-transform: uppercase;
 
   .logo {
