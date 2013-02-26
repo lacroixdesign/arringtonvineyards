@@ -3,28 +3,15 @@
   background: $gold;
   @include radial-gradient($gold, darken($gold, 5%));
   
-  li a {
-    color: $white;
-    text-shadow: 0 -1px 1px darken($gold, 10%);
-    font-size: 87.5%;
-    &:visited { color: $white; }
-    &:hover { color: darken($white, 10%); }
-    &:active { color: darken($white, 25%); }
-  }
-  
   .wrap {
     @include outer-container;
     padding: 0.5em $page-gutter;
   }
 
-  .logo-wrap {
-    margin-bottom: 2em;
-    img { width: 100%; }
-  }
-
   .logo {
-    width: 15em;
-    margin: 0 auto;
+    width: 2.5em;
+    margin: 0 auto 2em;
+    img { width: 100%; }
   }
 
   ul {
@@ -42,6 +29,15 @@
     font-style: italic;
   }
 
+  a {
+    color: $white;
+    text-shadow: 0 -1px 1px darken($gold, 10%);
+    font-size: 87.5%;
+    &:visited { color: $white; }
+    &:hover { color: darken($white, 10%); }
+    &:active { color: darken($white, 25%); }
+  }
+
   .icon {
     margin-left: 0.5em;
     font-size: 1em;
@@ -49,19 +45,28 @@
   }
 
   @include media($breakpoint-ipad) {
-    li { font-size: 1.5em; }
-    .icon { font-size: 1.75em; }
+    .logo {
+      float: left;
+    }
+
+    ul {
+      float: right;
+    }
+
+    li {
+      font-size: 1.5em;
+    }
+
+    .icon {
+      font-size: 1.75em;
+    }
   }
 
   @include media-ie($breakpoint-desktop) {
-    .logo-wrap {
+    .logo {
       float: left;
-      margin-bottom: 0;
+      margin: 0;
     }
-
-    .logo { margin: 0; }
-
-    ul { text-align: right; }
   }
 }
 
@@ -74,32 +79,26 @@
   padding: 0;
   margin-top: 0;
 
-  .logo-wrap {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    float: none;
-    width: 100%;
+  .logo {
+    display: none;
+    float: left;
+    width: 1em;
     margin: 0;
   }
 
-  .logo {
-    width: 15em;
-    margin: 0 auto 0.75em;
-  }
-
-  @include media-ie($breakpoint-desktop) {
-    .wrap { position: relative; }
-
-    .logo-wrap {
-      @include clearfix;
-      right: $page-gutter;
-      width: auto;
+  @include media-ie(480px) {
+    .logo {
+      display: block;
     }
 
-    .logo {
+    ul {
       float: right;
-      margin: 0 0 0.75em;
+    }
+  }
+
+  @include media-ie($breakpoint-ipad) {
+    .logo {
+      width: 2em;
     }
   }
 }

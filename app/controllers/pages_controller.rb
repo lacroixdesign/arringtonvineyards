@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   end
 
   def horizontal
+    @alt_footer = true
     @images = [
       { image: "bg1.jpg", width: 1600, height: 938 },
       { image: "bg4.jpg", width: 800, height: 1172 },
