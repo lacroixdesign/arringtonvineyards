@@ -1,6 +1,9 @@
 ArringtonVineyards::Application.routes.draw do
-  get ":action", controller: "pages"
-  root :to => "pages#index"
+  # TODO remove for production
+  resource :prototypes do
+    get ":action"
+    root to: "prototypes#index"
+  end
 
-  mount RailPass::Engine, :at => "styleguide"
+  root to: "pages#index"
 end
