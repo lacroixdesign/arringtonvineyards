@@ -7,5 +7,6 @@ class PagesController < ApplicationController
       { image: "bg2.jpg", width: 1600, height: 1067 },
       { image: "bg3.jpg", width: 1600, height: 1067 }
     ]
+    # @images = @images * 3
   end
 end

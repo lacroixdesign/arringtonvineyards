@@ -27,6 +27,15 @@ module ApplicationHelper
   def icon key
     raw "<i data-icon=&#x#{h(key)}></i>"
   end
+
+
+  # Markup for async images with noscript fallback
+  # 
+  def async_image img
+    el =  "<div data-behavior='delayedImage' data-src='#{img}' style='display:none;'></div>"
+    el += "<noscript><img src='#{img}'></noscript>"
+    raw(el)
+  end
   
 	
 	# 

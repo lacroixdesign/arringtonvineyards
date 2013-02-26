@@ -1,0 +1,31 @@
+.l-page
+  
+  .l-sidebar
+    %nav.m-subnav
+      %ul
+        - ["Our Story", "Meet the Owners", "Wine Making", "Vine Report", "Media"].each do |child_page|
+          %li= link_to child_page, "#"
+    = render "shared/account"
+
+  .l-main
+    %h1 Shop
+    %table.m-products
+      %tbody
+        - 5.times do
+          %tr
+            %td{ style: "padding: 1.5em 1em; width: 15em;" }= image_tag "placeholders/product_PLACEHOLDER.jpg"
+            %td{ style: "padding: 1.5em 1em;" }
+              %h3 Encore 2010
+              %p Rich, sweet port-style Chambourcin dessert wine.
+              %table
+                %tbody
+                  %tr
+                    %td{ style: "border: none;" } $29.99 / Bottle
+                    %td{ style: "border: none;" }
+                      %input{ type: "text", style: "width: 2em;", value: "1" }
+                    %td{ style: "border: none;" }= link_to "Add to Cart"
+                  %tr
+                    %td{ style: "border: none;" } $359.88 / Case
+                    %td{ style: "border: none;" }
+                      %input{ type: "text", style: "width: 2em;", value: "1" }
+                    %td{ style: "border: none;" }= link_to "Buy a Case"

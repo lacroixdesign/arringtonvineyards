@@ -13,8 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require underscore.min
-//= require jquery.easing.min
-//= require supersized.min
+//= require jquery.imagesloaded.min
 //= require spin.min
 //= require jquery.cookie
 //= require outdated-browser
