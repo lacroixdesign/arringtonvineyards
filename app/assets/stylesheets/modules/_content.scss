@@ -3,6 +3,10 @@
     @include image-frame;
     display: none;
   }
+
+  p {
+    text-align: justify;
+  }
   
   @include media-ie($breakpoint-ipad) {
     img {
