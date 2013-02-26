@@ -7,19 +7,4 @@
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   background: $white;
   @include radial-gradient($white, darken($white, 1.25%));
-
-  .m-menu {
-    @include outer-container;
-    padding: 0.5em $page-gutter;
-  }
-
-  @include media-ie($breakpoint-desktop) {
-    .logo {
-      @include span-columns(1);
-    }
-
-    ul {
-      @include span-columns(11);
-    }
-  }
 }

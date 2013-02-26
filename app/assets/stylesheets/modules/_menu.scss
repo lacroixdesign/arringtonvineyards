@@ -1,11 +1,14 @@
 .m-menu {
+  @include outer-container;
+  padding: 0.5em $page-gutter;
   color: $black;
   text-shadow: 0 1px 1px lighten($white, 25%);
   text-transform: uppercase;
 
   .logo {
     float: left;
-    img { max-width: 3em; }
+    width: 11em;
+    img { width: 100%; }
   }
 
   .toggle {
@@ -19,6 +22,7 @@
     display: none;
     list-style: none;
     clear: both;
+    padding: 0.5em 0 0;
     margin: 0;
     font-size: 1.25em;
     text-align: center;
@@ -34,20 +38,42 @@
   a:active { color: darken($gold, 15%);}
   
   @include media-ie($breakpoint-desktop) {
+    .logo {
+      float: left;
+      margin-right: 1em;
+    }
+
     .toggle {
       display: none;
     }
 
     ul {
-      display: block !important;
       clear: none;
+      float: left;
+      display: block !important;
+      padding: 0;
+      font-size: 1.1em;
       text-align: left;
     }
 
     li {
       display: inline-block;
-      margin: 0.625em 0 0 1.5em;
+      margin: 0.75em 0 0 1em;
       &:first-child { margin-left: 0; }
+    }
+  }
+
+  @include media(1024px) {
+    .logo {
+      margin-right: 1.5em;
+    }
+
+    ul {
+      font-size: 1.25em;
+    }
+
+    li {
+      margin: 0.625em 0 0 1.5em;
     }
   }
 }
