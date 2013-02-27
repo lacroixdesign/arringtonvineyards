@@ -65,7 +65,7 @@
   
   
   %body{ class: ("alternate-footer" if @alt_footer) }
-    /[if lt IE 9]
+    /[if lt IE 8]
       #outdated-browser.outdated-browser
         %p
           %a.close-btn{ href: "#", data: {behavior: "close:outdatedBrowser"} } x
@@ -83,10 +83,10 @@
             = image_tag "arrington-vineyards.png"
         .toggle= link_to "Menu", "#menu", data: {behavior: "toggle"}
         %ul#menu
+          %li= link_to "About Us", "#"
           %li= link_to "Visit Us", "#"
           %li= link_to "News & Events", "#"
           %li= link_to "Private Events", "#"
-          %li= link_to "Donations", "#"
           %li= link_to "Wine Club", "#"
           %li= link_to "Shop", "#"
           
@@ -106,6 +106,8 @@
           %li= link_to "Contact Us", "#"
           %li &bull;
           %li= link_to "FAQ", "#"    
+          %li &bull;
+          %li= link_to "Donations", "#"
           %li.icon= link_to icon("e000"), "#facebook"
           %li.icon= link_to icon("e001"), "#twitter"    
 

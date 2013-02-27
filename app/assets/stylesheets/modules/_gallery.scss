@@ -2,7 +2,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
   width: 100%;
 }
 

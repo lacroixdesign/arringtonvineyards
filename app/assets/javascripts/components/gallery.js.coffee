@@ -56,7 +56,7 @@ class Gallery
   start: ->
     for row in @rows
       @el.append(row.el)
-    @spinner.stop()
+    @spinner.stop() if @spinner
     @resize()
 
   # Determine gallery height & set row heights
