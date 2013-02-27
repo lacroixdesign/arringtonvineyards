@@ -1,11 +1,11 @@
 class PagesController < ApplicationController
   def index
     @alt_footer = true
-    @images = [
-      { image: "bg1.jpg", width: 1600, height: 938 },
-      { image: "bg4.jpg", width: 800, height: 1172 },
-      { image: "bg2.jpg", width: 1600, height: 1067 },
-      { image: "bg3.jpg", width: 1600, height: 1067 }
+    @images = ["bg1.jpg", "bg4.jpg", "bg2.jpg", "bg3.jpg"]
+    @images.map! {|img| view_context.image_path(img) }
+    @gallery = [
+      {images: @images},
+      {images: @images.reverse}
     ]
     # @images = @images * 3
   end
