@@ -3,29 +3,41 @@
   .l-sidebar
     %nav.m-subnav
       %ul
-        - ["Our Story", "Meet the Owners", "Wine Making", "Vine Report", "Media"].each do |child_page|
-          %li= link_to child_page, "#"
+        - ["Shop", "Wines", "Merchandise"].each do |child_page|
+          %li= link_to child_page, "/prototypes/shop"
+
     = render "shared/account"
+    = render "state_select"
 
   .l-main
     %h1 Shop
-    %table.m-products
-      %tbody
+
+    .m-product-policy
+      %p Shipping Policies: Orders must be placed by a person 21 or older. Packages will arrive via FedEx and must be signed for by a person 21 or older. Wine cannot be sent to a PO Box. International shipping is not available at this time. Please be sure to select the accurate ship to state when shopping. Gift certificates cannot be used as payment for web orders - they are for use On-Site only.  For more information please call (615) 395-0102.
+
+    .l-products
+      %ul.m-products
         - 5.times do
-          %tr
-            %td{ style: "padding: 1.5em 1em; width: 15em;" }= image_tag "placeholders/product_PLACEHOLDER.jpg"
-            %td{ style: "padding: 1.5em 1em;" }
-              %h3 Encore 2010
+
+          -# Product
+          %li.l-product
+            .m-product-image
+              = link_to "/prototypes/product" do
+                = image_tag "http://arrington-vineyards-dev.s3.amazonaws.com/prototype/product.jpg"
+            .m-product-overview
+              %h3= link_to "Encore 2010", "/prototypes/product"
               %p Rich, sweet port-style Chambourcin dessert wine.
-              %table
-                %tbody
-                  %tr
-                    %td{ style: "border: none;" } $29.99 / Bottle
-                    %td{ style: "border: none;" }
-                      %input{ type: "text", style: "width: 2em;", value: "1" }
-                    %td{ style: "border: none;" }= link_to "Add to Cart"
-                  %tr
-                    %td{ style: "border: none;" } $359.88 / Case
-                    %td{ style: "border: none;" }
-                      %input{ type: "text", style: "width: 2em;", value: "1" }
-                    %td{ style: "border: none;" }= link_to "Buy a Case"
+              
+              .m-product-actions
+                %table
+                  %tbody
+                    %tr
+                      %td $29.99 / Bottle
+                      %td
+                        %input{ type: "text", value: "1" }
+                      %td= link_to "Add to Cart", "#", class: "m-btn"
+                    %tr
+                      %td $359.88 / Case
+                      %td
+                        %input{ type: "text", value: "1" }
+                      %td= link_to "Buy a Case", "#", class: "m-btn"

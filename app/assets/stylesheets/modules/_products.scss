@@ -1,0 +1,96 @@
+// Products list
+.m-products {
+  margin: 0;
+}
+
+// Product image
+.m-product-image {
+  @include image-frame;
+  margin-bottom: 1em;
+}
+
+// Basic product details
+.m-product-overview {
+  margin-bottom: 1em;
+
+  p {
+    font-size: 1em;
+  }
+}
+
+// Add to cart
+.m-product-actions {
+  table {
+    margin-bottom: 1em;
+  }
+
+  td {
+    vertical-align: bottom;
+    border: none;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  td input {
+    width: 2em;
+    margin: 0;
+    border-color: $gold;
+    text-align: center;
+  }
+
+  .product-actions-subtotal {
+    color: $gold;
+    font-size: 0.875em;
+  }
+}
+
+// Product profile area
+.m-product-profile {
+  h4 {
+    margin-bottom: 1em;
+    border-bottom: 1px solid $gold;
+  }
+}
+
+// Product specs
+.m-product-specs {
+  tr:nth-child(2n+1) td {
+    background: darken($white, 5%);
+  }
+}
+
+// Product policies
+.m-product-policy {
+  p {
+    color: $gold;
+    font-size: 1em;
+  }
+}
+
+// Product pagination
+.m-product-pagination {
+  @include row;
+  padding-top: 1em;
+  margin-top: 1em;
+  border-top: 1px solid lighten($gold, 25%);
+  text-align: center;
+
+  .product-pagination-prev,
+  .product-pagination-next {
+    color: $wine;
+    font-weight: bold;
+    &:hover { text-decoration: underline; }
+  }
+
+  .product-pagination-prev {
+    float: left;
+  }
+
+  .product-pagination-next {
+    float: right;
+  }
+
+  .product-pagination-state {}
+}

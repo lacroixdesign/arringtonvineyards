@@ -1,15 +1,21 @@
-// Standard buttons used throughout the application.
-//
-// :hover    - Highlights when hovering.
-// :disabled - Dims the button when disabled.
-// .primary  - Indicates button is the primary action.
-//
-// Styleguide 5.1
-.btn {
-  padding: 0.5em 1em;
-  border: 1px solid #ddd;
-  border-radius: 0;
-  color: #555;
-  background: #f8f8f8;
-  text-shadow: 0 1px 1px white;
+// Standard buttons
+.m-btn {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  border: 1px solid darken($wine, 4%);
+  border-radius: 4px;
+  box-shadow: 0 0px 3px rgba(0,0,0,0.25),
+              inset 0 1px 1px lighten($wine, 15%),
+              inset 0 -1px 1px darken($wine, 3%);
+  background: $wine;
+  @include linear-gradient(top, lighten($wine, 7%), darken($wine, 2%));
+  color: $white;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px darken($wine, 5%);
+
+  &:hover,
+  &:visited,
+  &:active {
+    color: $white;
+  }
 }

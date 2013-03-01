@@ -32,12 +32,16 @@ p {
   font-size: 1.25em;
 
   a {
-    color: $gold;
+    color: $wine;
     &:visited,
     &:hover {
-      color: $gold;
+      color: $wine;
     }
   }
+}
+
+hr {
+  border-color: lighten($gold, 35%);
 }
 
 img {
