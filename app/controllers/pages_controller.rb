@@ -1,12 +1,11 @@
 class PagesController < ApplicationController
   def index
     @alt_footer = true
-    @images = ["bg1.jpg", "bg4.jpg", "bg2.jpg", "bg3.jpg"]
-    @images.map! {|img| view_context.image_path(img) }
+    @images1 = (1..9).map {|n| "http://arrington-vineyards-dev.s3.amazonaws.com/prototype/gallery/bg-#{n}.jpg" }
+    @images2 = (10..20).map {|n| "http://arrington-vineyards-dev.s3.amazonaws.com/prototype/gallery/bg-#{n}.jpg" }
     @gallery = [
-      {images: @images},
-      {images: @images.reverse}
+      {images: @images1},
+      {images: @images2}
     ]
-    # @images = @images * 3
   end
 end
