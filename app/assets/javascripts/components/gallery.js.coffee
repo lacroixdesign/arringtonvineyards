@@ -62,11 +62,10 @@ class Gallery
   # Determine gallery height & set row heights
   resize: =>
     windowHeight  = $(window).height()
-    wrapHeight    = if windowHeight < 900 then windowHeight else 900
     navHeight     = $("#l-nav").height()
     footerHeight  = $("#l-footer").height()
     # Subtract 2 to compensate for top & bottom padding of 1px
-    galleryHeight = wrapHeight - navHeight - footerHeight - 2
+    galleryHeight = windowHeight - navHeight - footerHeight - 2
     @el.height(galleryHeight).css("top", navHeight+1)
 
     if @rows.length > 0
