@@ -1,18 +1,26 @@
 // Products list
 .m-products {
+  list-style: none;
   margin: 0;
 }
 
-// Product image
-.m-product-image {
-  @include image-frame;
-  margin-bottom: 1em;
+// Product
+.m-product {
+  margin-bottom: 3em;
+  text-align: center;
+
+  .m-product-image {
+    margin-bottom: 1em;
+  }
+
+  .m-product-actions table {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 // Basic product details
 .m-product-overview {
-  margin-bottom: 1em;
-
   p {
     font-size: 1em;
   }
@@ -20,6 +28,16 @@
 
 // Add to cart
 .m-product-actions {
+  .product-prices {
+    list-style: none;
+    margin: 0 0 0.5em;
+
+    li {
+      margin: 0;
+      font-size: 1em;
+    }
+  }
+
   table {
     margin-bottom: 1em;
   }
@@ -40,10 +58,6 @@
     text-align: center;
   }
 
-  .product-actions-subtotal {
-    color: $gold;
-    font-size: 0.875em;
-  }
 }
 
 // Product profile area

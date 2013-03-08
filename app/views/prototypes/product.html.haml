@@ -7,71 +7,50 @@
           %li= link_to child_page, "/prototypes/shop"
 
     = render "shared/account"
+    .m-subtotal Subtotal: $179.94
     = render "state_select"
 
   .l-main
-    .m-product-policy
-      %p Shipping Policies: Orders must be placed by a person 21 or older. Packages will arrive via FedEx and must be signed for by a person 21 or older. Wine cannot be sent to a PO Box. International shipping is not available at this time. Please be sure to select the accurate ship to state when shopping. Gift certificates cannot be used as payment for web orders - they are for use On-Site only.  For more information please call (615) 395-0102.
-
     -# Product
-    .l-product
-      .m-product-image= image_tag "http://arrington-vineyards-dev.s3.amazonaws.com/prototype/product.jpg"
-      .m-product-overview
-        %h3 Encore 2010
-        %p Rich, sweet port-style Chambourcin dessert wine.
-        
+    .l-product-single
+
+      .m-product
+        .m-product-image= image_tag "http://arrington-vineyards-dev.s3.amazonaws.com/prototype/wine-bottle.png"
         .m-product-actions
+          %ul.product-prices
+            %li $29.99 / Bottle
+            %li $359.88 / Case
           %table
             %tbody
               %tr
-                %td $29.99 / Bottle
                 %td
                   %input{ type: "text", value: "1" }
                 %td= link_to "Add to Cart", "#", class: "m-btn"
               %tr
-                %td $359.88 / Case
                 %td
                   %input{ type: "text", value: "1" }
                 %td= link_to "Buy a Case", "#", class: "m-btn"
-          .product-actions-subtotal Subtotal: $179.94
 
-    -# Product Profile
-    .l-product-profile.m-product-profile
-      %h4 Wine Profile
-      .m-product-description
-        %h5 Tasting Notes:
-        %p
-          Rich, complex flavors of chocolate covered cherries, mocha and clove.
-        %h5 Winemaker Notes:
-        %p
-          This &ldquo;Port&rdquo; style wine was made from our hillside Chambourcin vineyard. Grape spirits (brandy) was added to halt fermentation and preserve the sweetness of the grape juice. 22 months of barrel aging in French and American oak added mocha and clove flavors.
-        %h5 Food Pairing:
-        %p
-          Stilton blue cheese, cheesecake, chocolates, berry desserts, dates and nuts.
-      .m-product-specs
-        %table
-          %tbody
-            %tr
-              %td Vintage:
-              %td 2010
-            %tr
-              %td Wine Type:
-              %td Port
-            %tr
-              %td Varietal:
-              %td Chambourcin (100% Estate Grapes)
-            %tr
-              %td Appellation:
-              %td Tennessee (100% Estate Grapes)
-            %tr
-              %td Bottling Date:
-              %td October 10, 2012
-            %tr
-              %td Residual Sugar:
-              %td 8.5% (sweet)
-            %tr
-              %td Alcohol:
-              %td 19.1
+      .m-product-overview
+        %h1 Encore 2010
+        %p Rich, sweet port-style Chambourcin dessert wine.
+
+        .m-product-profile
+          %h4 Wine Profile
+          .m-product-description
+            %h5 Tasting Notes:
+            %p
+              Rich, complex flavors of chocolate covered cherries, mocha and clove.
+            %h5 Winemaker Notes:
+            %p
+              This &ldquo;Port&rdquo; style wine was made from our hillside Chambourcin vineyard. Grape spirits (brandy) was added to halt fermentation and preserve the sweetness of the grape juice. 22 months of barrel aging in French and American oak added mocha and clove flavors.
+            %h5 Food Pairing:
+            %p
+              Stilton blue cheese, cheesecake, chocolates, berry desserts, dates and nuts.
+
+    -# Shipping Disclaimer
+    .m-product-policy
+      %p Shipping Policies: Orders must be placed by a person 21 or older. Packages will arrive via FedEx and must be signed for by a person 21 or older. Wine cannot be sent to a PO Box. International shipping is not available at this time. Please be sure to select the accurate ship to state when shopping. Gift certificates cannot be used as payment for web orders - they are for use On-Site only.  For more information please call (615) 395-0102.
 
     -# Product Pagination
     .m-product-pagination

@@ -4,6 +4,7 @@ body {
   background: $off-white;
   font-family: $typeface-serif;
   text-shadow: 1px 1px 1px transparent;
+  @include ie-width;
 }
 
 a {
