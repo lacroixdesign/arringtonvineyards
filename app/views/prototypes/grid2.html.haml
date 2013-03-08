@@ -1,0 +1,7 @@
+.l-inner{ style: "margin-left:1em; margin-right:1em;" }
+  .m-grid-gallery-2
+    - (1..5).each do |position|
+      .photo{ class: "position-#{position}" }= image_tag "placeholders/portrait#{position}.jpg"
+  .m-grid-gallery-2
+    - (1..5).each do |position|
+      .photo{ class: "position-#{position}" }= image_tag "placeholders/landscape#{position}.jpg"

@@ -47,3 +47,55 @@
     .position-5 { display: block }
   }
 }
+
+.m-grid-gallery-2 {
+  @include clearfix;
+  @include outer-container;
+  margin-bottom: 5px;
+
+  .photo {
+    float: left;
+    display: none;
+    width: 98.5%;
+    margin: 0 0.75%;
+    &:first-child { display: block; }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  @include media(480px) {
+    .photo {
+      width: 49.2%;
+      margin: 0 0.4%;
+    }
+    .position-2 { display: block }
+  }
+
+  @include media(768px) {
+    .photo {
+      width: 32.633333333%;
+      margin: 0 0.35%;
+    }
+    .position-3 { display: block }
+  }
+
+  @include media(900px) {
+    .photo {
+      width: 24.6%;
+      margin: 0 0.2%;
+    }
+    .position-4 { display: block }
+  }
+
+  @include media(1400px) {
+    .photo {
+      width: 19.7%;
+      margin: 0 0.15%;
+    }
+    .position-5 { display: block }
+  }
+}
+
