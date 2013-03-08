@@ -1,8 +1,9 @@
 #l-footer {
   padding: 1em 0 3em;
-  background: $gold;
-  @include radial-gradient($gold, darken($gold, 5%));
-  color: $white;
+  box-shadow: 0 -1px 1px rgba(0,0,0,0.1);
+  background: $white;
+  @include radial-gradient($white, darken($white, 1.25%));
+  color: $black;
   
   .wrap {
     @include outer-container;
@@ -20,7 +21,7 @@
     margin: 0;
     font-size: 1em;
     text-align: center;
-    text-shadow: 0 -1px 1px darken($gold, 10%);
+    text-shadow: 0 1px 1px lighten($white, 10%);
   }
 
   li {
@@ -31,11 +32,11 @@
   }
 
   a {
-    color: $white;
-    text-shadow: 0 -1px 1px darken($gold, 10%);
-    &:visited { color: $white; }
-    &:hover { color: darken($white, 10%); }
-    &:active { color: darken($white, 25%); }
+    color: $black;
+    text-shadow: 0 1px 1px lighten($white, 10%);
+    &:visited { color: $black; }
+    &:hover { color: darken($gold, 10%); }
+    &:active { color: darken($gold, 25%); }
   }
 
   .icon {
@@ -62,11 +63,11 @@
     }
 
     li {
-      font-size: 1.3125em;
+      font-size: 1em;
     }
 
     .icon {
-      font-size: 1.75em;
+      font-size: 1.25em;
     }
 
     .developed {
