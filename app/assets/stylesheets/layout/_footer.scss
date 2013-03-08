@@ -4,6 +4,7 @@
   background: $white;
   @include radial-gradient($white, darken($white, 1.25%));
   color: $black;
+  @include ie-width;
   
   .wrap {
     @include outer-container;

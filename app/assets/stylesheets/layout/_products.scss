@@ -1,23 +1,30 @@
-.l-products {
-  .l-product {
-    border-bottom: 1px solid lighten($gold, 35%);
-    &:last-child {
-      border-bottom: none;
+.l-products-grid {
+  @include row;
+
+  .m-product {
+    @include media(480px) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+
+    @include media(1000px) {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+
+    @include media-ie {
+      float: left;
+      width: 31%;
+      margin: 1em 1.166666667% 3em;
     }
   }
 }
 
-// General product info
-.l-product {
+.l-product-single {
   @include row;
-  margin-bottom: 1em;
 
-  .m-product-image {
-    max-width: 20em;
-  }
-
-  @include media-ie(480px) {
-    .m-product-image {
+  @include media-ie($breakpoint-ipad) {
+    .m-product {
       @include span-columns(4);
     }
 

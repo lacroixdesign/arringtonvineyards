@@ -16,6 +16,6 @@
 // Add min-width to containers for old IE
 @mixin ie-width {
   .old-ie & {
-    min-width: $breakpoint-ipad;
+    min-width: 1024px;
   }
 }

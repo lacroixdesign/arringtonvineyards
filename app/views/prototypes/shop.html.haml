@@ -7,37 +7,35 @@
           %li= link_to child_page, "/prototypes/shop"
 
     = render "shared/account"
+    .m-subtotal Subtotal: $179.94
     = render "state_select"
 
   .l-main
     %h1 Shop
 
+    -# Shipping Disclaimer
     .m-product-policy
       %p Shipping Policies: Orders must be placed by a person 21 or older. Packages will arrive via FedEx and must be signed for by a person 21 or older. Wine cannot be sent to a PO Box. International shipping is not available at this time. Please be sure to select the accurate ship to state when shopping. Gift certificates cannot be used as payment for web orders - they are for use On-Site only.  For more information please call (615) 395-0102.
 
-    .l-products
+    -# Products Grid
+    .l-products-grid
       %ul.m-products
         - 5.times do
 
           -# Product
-          %li.l-product
+          %li.m-product
             .m-product-image
               = link_to "/prototypes/product" do
-                = image_tag "http://arrington-vineyards-dev.s3.amazonaws.com/prototype/product.jpg"
+                = image_tag "http://arrington-vineyards-dev.s3.amazonaws.com/prototype/wine-bottle.png"
             .m-product-overview
               %h3= link_to "Encore 2010", "/prototypes/product"
-              %p Rich, sweet port-style Chambourcin dessert wine.
               
-              .m-product-actions
-                %table
-                  %tbody
-                    %tr
-                      %td $29.99 / Bottle
-                      %td
-                        %input{ type: "text", value: "1" }
-                      %td= link_to "Add to Cart", "#", class: "m-btn"
-                    %tr
-                      %td $359.88 / Case
-                      %td
-                        %input{ type: "text", value: "1" }
-                      %td= link_to "Buy a Case", "#", class: "m-btn"
+            .m-product-actions
+              %ul.product-prices
+                %li $29.99 / Bottle
+              %table
+                %tbody
+                  %tr
+                    %td
+                      %input{ type: "text", value: "1" }
+                    %td= link_to "Add to Cart", "#", class: "m-btn"

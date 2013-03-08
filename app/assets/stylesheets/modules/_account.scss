@@ -20,3 +20,13 @@
     font-size: 0.9375em;
   }
 }
+
+.m-subtotal {
+  margin-bottom: 1em;
+  color: $gold;
+  font-size: 0.8125em;
+
+  @include media-ie($breakpoint-desktop) {
+    font-size: 0.875em;
+  }
+}
