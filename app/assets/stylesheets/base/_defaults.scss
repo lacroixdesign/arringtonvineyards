@@ -5,8 +5,7 @@ body {
   font-family: $typeface-serif;
   text-shadow: 1px 1px 1px transparent;
   @include ie-width;
-    
-    @include media(1200px) { font-size: 125%;}
+  @include media($breakpoint-large-screen) { font-size: 125%; }
 }
 
 a {
@@ -34,8 +33,7 @@ h6 {}
 p {
   font-size: 1.25em;
   line-height: 1.37em;
-    
-    @include media(1200px) { font-size: 1em;}
+  @include media($breakpoint-large-screen) { font-size: 1em; }
 
   a {
     color: $wine;
