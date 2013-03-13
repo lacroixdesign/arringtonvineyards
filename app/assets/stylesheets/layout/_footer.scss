@@ -1,8 +1,6 @@
 #l-footer {
   padding: 1em 0 3em;
-  box-shadow: 0 -1px 1px rgba(0,0,0,0.1);
   background: $white;
-  @include radial-gradient($white, darken($white, 1.25%));
   color: $black;
   @include ie-width;
   
@@ -33,11 +31,11 @@
   }
 
   a {
-    color: $black;
+    color: $gray;
     text-shadow: 0 1px 1px lighten($white, 10%);
-    &:visited { color: $black; }
-    &:hover { color: darken($gold, 10%); }
-    &:active { color: darken($gold, 25%); }
+    &:visited { color: $gray; }
+    &:hover { color: $gold}
+    &:active { color: darken($gold, 15%); }
   }
 
   .icon {
