@@ -1,5 +1,8 @@
 .m-featured-image {
   @include image-frame;
-  width: 75%;
   margin: auto;
+
+  @include media-ie(480px) {
+    max-width: 75%;
+  }
 }
