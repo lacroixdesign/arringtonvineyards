@@ -51,6 +51,7 @@
 .m-grid-gallery-2 {
   @include clearfix;
   @include outer-container;
+  padding: 0 $page-gutter;
   margin-bottom: 5px;
 
   .photo {
