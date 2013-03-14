@@ -2,8 +2,8 @@
   @include outer-container;
   padding: 0.5em $page-gutter;
   color: $black;
+  font-family: $typeface-serif-sc;
   text-shadow: 0 1px 1px lighten($white, 25%);
-  text-transform: uppercase;
 
   .logo {
     float: left;
@@ -15,7 +15,6 @@
     float: right;
     margin: 0.625em 0 0;
     font-size: 1.25em;
-    text-transform: uppercase;
   }
 
   ul {
