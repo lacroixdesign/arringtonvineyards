@@ -7,8 +7,9 @@
           %li= link_to child_page, "/prototypes/shop"
 
     = render "shared/account"
-    .m-subtotal Subtotal: $179.94
+    %h4 Shipping To:
     = render "state_select"
+    .m-subtotal Subtotal: $179.94
 
   .l-main
     %h1 Shop
@@ -28,7 +29,7 @@
               = link_to "/prototypes/product" do
                 = image_tag "http://arrington-vineyards-dev.s3.amazonaws.com/prototype/wine-bottle.png"
             .m-product-overview
-              %h3= link_to "Encore 2010", "/prototypes/product"
+              %h3= link_to "Gewurztraminer 2011", "/prototypes/product"
               
             .m-product-actions
               %ul.product-prices
