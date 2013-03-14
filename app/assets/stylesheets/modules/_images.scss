@@ -1,3 +1,5 @@
 .m-featured-image {
   @include image-frame;
+  width: 75%;
+  margin: auto;
 }
