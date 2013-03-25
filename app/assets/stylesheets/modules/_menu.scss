@@ -1,7 +1,7 @@
 .m-menu {
   @include outer-container;
   padding: 0.5em $page-gutter;
-  color: $black;
+  color: $gold;
   font-family: $typeface-serif-sc;
   text-shadow: 0 1px 1px lighten($white, 25%);
 
@@ -32,9 +32,10 @@
     margin: 0.75em 0;
   }
   
-  a:visited { color: $black;}
-  a:hover { color: $gold;}
-  a:active { color: darken($gold, 15%);}
+  a { color: $gold;}
+  a:visited { color: $gold;}
+  a:hover { color: $wine;}
+  a:active { color: darken($wine, 15%);}
   
   @include media-ie($breakpoint-desktop) {
     .logo {

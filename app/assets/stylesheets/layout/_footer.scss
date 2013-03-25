@@ -1,7 +1,7 @@
 #l-footer {
   padding: 0 0 1em;
   background: $white;
-  color: $black;
+  color: $gold;
   @include ie-width;
   
   .wrap {
@@ -25,11 +25,11 @@
   }
 
   a {
-    color: $gray;
+    color: $gold;
     text-shadow: 0 1px 1px lighten($white, 10%);
-    &:visited { color: $gray; }
-    &:hover { color: $gold}
-    &:active { color: darken($gold, 15%); }
+    &:visited { color: $gold; }
+    &:hover { color: $wine}
+    &:active { color: darken($wine, 15%); }
   }
 
   .icon {
