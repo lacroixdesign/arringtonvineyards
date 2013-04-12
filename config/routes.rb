@@ -5,5 +5,5 @@ ArringtonVineyards::Application.routes.draw do
     root to: "prototypes#index"
   end
 
-  root to: "pages#index"
+  root to: "static#index"
 end
