@@ -38,8 +38,6 @@
     %link{rel: "apple-touch-icon-precomposed", sizes: "72x72", href: "#{root_url}/apple-touch-icon-72x72-precomposed.png"}
     %link{rel: "apple-touch-icon-precomposed", sizes: "114x114", href: "#{root_url}/apple-touch-icon-114x114-precomposed.png"}
     %link{rel: "apple-touch-icon-precomposed", sizes: "144x144", href: "#{root_url}/apple-touch-icon-144x144-precomposed.png"}
-    / %meta{name: "msapplication-TileColor", content: "#ffffff"}
-    / %meta{name: "msapplication-TileImage", content: "#{root_url}/windows-icon.png"}
     %meta{name: "viewport", content: "initial-scale=1.0, user-scalable=no, maximum-scale=1.0"}
     %meta{name: "apple-mobile-web-app-capable", content: "yes"}
     %meta{name: "apple-mobile-web-app-status-bar-style", content:"black"}
@@ -87,7 +85,7 @@
         %ul
           %li= link_to "Our Wines", "http://shop.arringtonvineyards.com"
           %li &bull;
-          %li= link_to "Sign Up", "#sign-up"
+          %li= link_to "Sign Up", "https://app.e2ma.net/app2/audience/signup/1734822/1722055/?v=a", target: "_blank", onclick: raw("window.open('https://app.e2ma.net/app2/audience/signup/1734822/1722055/?v=a', 'signup', 'menubar=no, location=no, toolbar=no, scrollbars=yes, height=500'); return false;")
           %li &bull;
           %li= link_to "Donations", "/donations"
           %li &bull;
