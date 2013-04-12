@@ -1,1 +1,7 @@
-.m-gallery{ data: {gallery: @gallery.to_json} }
+.l-inner
+  .m-gallery
+    - (1..5).each do |position|
+      .gallery-photo{ class: "position-#{position}" }= image_tag "placeholders/portrait#{position}.jpg"
+  .m-gallery
+    - (1..5).each do |position|
+      .gallery-photo{ class: "position-#{position}" }= image_tag "placeholders/landscape#{position}.jpg"

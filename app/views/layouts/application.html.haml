@@ -64,17 +64,7 @@
   
   
   
-  %body{ class: ("alternate-footer" if @alt_footer) }
-    /[if lt IE 8]
-      #outdated-browser.outdated-browser
-        %p
-          %a.close-btn{ href: "#", data: {behavior: "close:outdatedBrowser"} } x
-          You are using an outdated browser. Please 
-          %a{ href: "http://browsehappy.com/", target: '_blank' } upgrade your browser
-          or 
-          %a{ href: "http://www.google.com/chromeframe/?redirect=true", target: '_blank' } activate Google Chrome Frame
-          to improve your experience.
-
+  %body
 
     %nav#l-nav
       .m-menu
@@ -90,10 +80,7 @@
           %li= link_to "Wine Club", "#"
           %li= link_to "Shop", "#"
           
-      
-      
     = yield
-    
     
     %footer#l-footer
       .wrap
