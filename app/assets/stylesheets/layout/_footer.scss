@@ -65,36 +65,3 @@
     }
   }
 }
-
-// Alternate Footer Layout
-.alternate-footer #l-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  margin-top: 0;
-
-  .logo {
-    display: none;
-    float: left;
-    width: 1em;
-    margin: 0;
-  }
-
-  @include media-ie(480px) {
-    .logo {
-      display: block;
-    }
-
-    ul {
-      float: right;
-    }
-  }
-
-  @include media-ie($breakpoint-ipad) {
-    .logo {
-      width: 2em;
-    }
-  }
-}
