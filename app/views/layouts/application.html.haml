@@ -73,29 +73,29 @@
             = image_tag "arrington-vineyards.png"
         .toggle= link_to "Menu", "#menu", data: {behavior: "toggle"}
         %ul#menu
-          %li= link_to "About Us", "#"
-          %li= link_to "Visit Us", "#"
-          %li= link_to "News & Events", "#"
-          %li= link_to "Private Events", "#"
-          %li= link_to "Wine Club", "#"
-          %li= link_to "Shop", "#"
+          %li= link_to "About Us", "/about"
+          %li= link_to "Visit Us", "/visit"
+          %li= link_to "News & Events", "/news"
+          %li= link_to "Private Events", "/private-events"
+          %li= link_to "Wine Club", "/wine-club"
+          %li= link_to "Shop", "http://shop.arringtonvineyards.com"
           
     = yield
     
     %footer#l-footer
       .wrap
         %ul
-          %li= link_to "Our Wines", "#"
+          %li= link_to "Our Wines", "http://shop.arringtonvineyards.com"
           %li &bull;
-          %li= link_to "Sign Up", "#"
+          %li= link_to "Sign Up", "#sign-up"
           %li &bull;
-          %li= link_to "Donations", "#"
+          %li= link_to "Donations", "/donations"
           %li &bull;
-          %li= link_to "FAQ", "#"    
+          %li= link_to "FAQ", "/faq"
           %li &bull;
-          %li= link_to "Contact Us", "#"
-          %li.icon= link_to icon("e000"), "#facebook"
-          %li.icon= link_to icon("e001"), "#twitter"    
+          %li= link_to "Contact Us", "/contact"
+          %li.icon= link_to icon("e000"), "https://www.facebook.com/ArringtonVineyards", target: "_blank"
+          %li.icon= link_to icon("e001"), "https://twitter.com/avwinery", target: "_blank"
     
     
     
