@@ -4,32 +4,13 @@
 %html{ lang: "en" }
   <!--<![endif]-->
 
-  / 
-    _
-    _
-    _          ///   ///    ..oOOOo..
-    _         ///   ///  .:OOOOOOOOOOO:.
-    _        ///   ///  .OOOOOOOOOOOOOOO.
-    _       ///   ///   OOOOOOOOOOOOOOOOO 
-    _      ///   ///    OOOOOOOOOOOOOOOOO
-    _     ///   ///     OOOOOOOOOOOOOOOOO 
-    _    ///   ///      `OOOOOOOOOOOOOOO'
-    _   ///   ///        `:OOOOOOOOOOO:'
-    _  ///   ///            ''*OOO*''
-    _  
-    _  Designed & Developed by LaCroix Design Co.
-    _    http://lacroixdesign.net
-    _  
-    _  
-    _
-  
   %head
     %meta(charset="utf-8")
     %title=raw [yield(:title), "Arrington Vineyards"].reject(&:blank?).join(' | ')
     
     -# koko wa general meta
-    %meta{name: "description", content: "FIXME: APPLICATION DESCRIPTION"}
-    %meta{name: "author", content: "Michael LaCroix, James LaCroix"}
+    %meta{name: "description", content: "Founded by Kix Brooks, Arrington Vineyards is located 25 minutes south of Nashville among the beautiful hills of Arrington, Tennessee."}
+    %meta{name: "author", content: "Arrington Vineyards"}
     %meta{:'http-equiv' => "X-UA-Compatible", content: "chrome=1"}
     
     -# koko wa fav and touch icons (reside in the /public folder), plus iOS meta
@@ -60,8 +41,6 @@
       try{Typekit.load();}catch(e){}
   
   
-  
-  
   %body
 
     %nav#l-nav
@@ -85,7 +64,7 @@
         %ul
           %li= link_to "Our Wines", "http://shop.arringtonvineyards.com"
           %li &bull;
-          %li= link_to "Sign Up", "https://app.e2ma.net/app2/audience/signup/1734822/1722055/?v=a", target: "_blank", onclick: raw("window.open('https://app.e2ma.net/app2/audience/signup/1734822/1722055/?v=a', 'signup', 'menubar=no, location=no, toolbar=no, scrollbars=yes, height=500'); return false;")
+          %li= link_to "Newsletter", "https://app.e2ma.net/app2/audience/signup/1734822/1722055/?v=a", target: "_blank", onclick: raw("window.open('https://app.e2ma.net/app2/audience/signup/1734822/1722055/?v=a', 'signup', 'menubar=no, location=no, toolbar=no, scrollbars=yes, height=500'); return false;")
           %li &bull;
           %li= link_to "Donations", "/donations"
           %li &bull;
