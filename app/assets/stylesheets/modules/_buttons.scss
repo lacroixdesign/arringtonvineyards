@@ -1,7 +1,7 @@
 // Standard buttons
 .m-btn {
   display: inline-block;
-  padding: 0.35em 0.65em;
+  padding: 0 1em;
   border: 1px solid darken($wine, 4%);
   border-radius: 4px;
   box-shadow: 0 0px 3px rgba(0,0,0,0.25),
@@ -10,12 +10,28 @@
   background: $wine;
   @include linear-gradient(top, lighten($wine, 7%), darken($wine, 2%));
   color: $white;
+  font-size: 0.8125em;
   font-weight: bold;
+  line-height: 2.4;
   text-shadow: 0 -1px 1px darken($wine, 5%);
 
-  &:hover,
-  &:visited,
-  &:active {
+  &:hover {
+    background: darken($wine, 5);
+    @include linear-gradient(top, lighten($wine, 5%), darken($wine, 5%));
     color: $white;
+  }
+
+  &:active {
+    background: lighten($wine, 5);
+    @include linear-gradient(top, darken($wine, 2%), lighten($wine, 7%));
+    color: $white;
+  }
+
+  &:visited {
+    color: $white;
+  }
+
+  @include media-ie($breakpoint-large-screen) {
+    line-height: 2.25;
   }
 }
